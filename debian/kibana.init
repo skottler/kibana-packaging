@@ -1,0 +1,35 @@
+#!/bin/bash 
+
+KIBANA_PATH="/usr/share/kibana"
+
+case "$1" in
+start)
+  ruby $KIBANA_PATH/kibana-daemon.rb $1
+  RETVAL=$?
+;;
+
+stop)
+  ruby $KIBANA_PATH/kibana-daemon.rb $1
+  RETVAL=$?
+;;
+
+restart)
+  ruby $KIBANA_PATH/kibana-daemon.rb $1
+  RETVAL=$?
+;;
+
+status)
+  ruby $KIBANA_PATH/kibana-daemon.rb $1
+;;
+
+force-reload)
+  ruby $KIBANA_PATH/kibana-daemon.rb $1
+  RETVAL=$?
+;;
+
+*)
+  echo "Usage: $0 {start|stop|restart|status|force-reload}"
+  exit 1
+esac
+
+exit $RETVAL

@@ -1,0 +1,21 @@
+This package was debianized by Sam Kottler <shk@linux.com>
+on Sun, 27 Jan 2013 17:09:29 +0302
+
+It was downloaded from: https://github.com/rashidkpc/Kibana
+
+Upstream Author(s):
+
+	Rashid Khan
+
+Copyright:
+
+       Copyright (C) 2012-2013 by Rashid Khan
+
+License: MIT
+
+	A copy of the license is available at http://opensource.org/licenses/MIT.
+
+Packaging:
+
+	Copyright (C) 2013 by Sam Kottler <shk@linux.com> under the MIT
+	license.

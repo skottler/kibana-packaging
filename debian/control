@@ -1,0 +1,21 @@
+Source: kibana
+Maintainer: Sam Kottler <shk@linux.com>
+Section: web
+Priority: extra
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7), cdbs, ruby,
+	ruby1.8-dev, ruby-daemons, ruby-sinatra, ruby-tzinfo, ruby-fastercsv,
+	ruby-json
+Homepage: http://kibana.org/
+
+Package: kibana
+Architecture: any
+Section: web
+Priority: extra
+Depends: rubygems1.8 | ruby1.9.1
+Description: A user friendly way to view, search and visualize your log data.
+ .
+ An open source (MIT License), browser based interface to Logstash
+ and ElasticSearch. Once you have those in place, Kibana is a breeze to install
+ and configure (really, I swear). And as you'll see below, none too hard to
+ operate. Check out the screenshots for an idea of what Kibana is all about.

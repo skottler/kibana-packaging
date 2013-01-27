@@ -1,0 +1,5 @@
+kibana (0.2+debian0.0) wheezy; urgency=low
+
+  * Initial packaging - 0.2.0
+
+ -- Sam Kottler <shk@linux.com>  Sun, 27 Jan 2013 16:21:00 +0100
