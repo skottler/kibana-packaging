@@ -1,0 +1,5 @@
+START=no
+
+KIBANA_ROOT='/usr/share/foreman'
+KIBANA_LISTEN='0.0.0.0'
+KIBANA_USER='kibana'

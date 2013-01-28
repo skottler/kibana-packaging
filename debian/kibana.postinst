@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ ! -z "${DEBUG}" ]; then
+  set -x
+else
+  set -e
+fi
+
+trap db_stop EXIT
+
+getent group kibana >/dev/null || groupadd -r kibana
+getent passwd kibana >/dev/null || \
+    useradd -r -g kibana -G kibana -d /usr/share/kibana -s /usr/sbin/nologin -c "Kibana" kibana
+
+chown -Rf kibana:kibana '/usr/share/kibana'
